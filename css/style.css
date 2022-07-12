@@ -15,6 +15,27 @@
     width: 100%;
   }
 }
+.row-4 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px -30px;
+}
+
+.col-4 {
+  width: 25%;
+  padding: 0 15px 30px;
+}
+
+@media (max-width: 991px) {
+  .col-4 {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .col-4 {
+    width: 100%;
+  }
+}
 .text-links, .lessons-read, .lessons-watch, .mission__link, .lesson-audio, .lesson-video, .lesson-load {
   color: #0052B8;
 }
@@ -22,7 +43,7 @@
   text-decoration: underline;
 }
 
-.titles-h2, .description-lessons__heading, .mission__heading, .video-content__heading, .sabbat-school-archive__heading, .video-invite__heading {
+.titles-h2, .benefit-christian__col h2, .description-lessons__heading, .mission__heading, .video-content__heading, .sabbat-school-archive__heading, .video-invite__heading {
   font-size: 2rem;
   font-weight: 700;
   line-height: 120%;
@@ -34,7 +55,7 @@
   color: #4E4E4E;
 }
 
-.description-color, .children-lessons__body p, .description-lessons__text, .mission__text, .sabbat-school-lesson__date, .sabbat-school-archive__text p, .video-invite__text p {
+.description-color, .our-team__body p, .church-card__body p, .benefit-christian__col p, .children-lessons__body p, .description-lessons__text, .mission__text, .sabbat-school-lesson__date, .sabbat-school-archive__text p, .video-invite__text p {
   color: #4E4E4E;
 }
 
@@ -1049,65 +1070,52 @@ body {
     width: 100%;
   }
 }
-.benefit {
+.benefit-christian {
   padding: 70px 0;
 }
-
-.benefit__row {
+.benefit-christian__row {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-
-.benefit__col {
+.benefit-christian__col {
   max-width: 700px;
+  text-align: center;
 }
-.benefit__col h2 {
-  margin-bottom: 30px;
+.benefit-christian__col h2 {
+  margin-bottom: 20px;
 }
-.benefit__col p {
+.benefit-christian__col p {
   max-width: 600px;
 }
 
 @media (max-width: 1230px) {
-  .benefit {
+  .benefit-christian {
     padding-top: calc(40px + 30 * (100vw - 320px) / 910);
     padding-bottom: calc(40px + 30 * (100vw - 320px) / 910);
   }
-  .benefit__col h2 {
-    font-size: calc(28px + 4 * (100vw - 320px) / 910);
+  .benefit-christian__col h2 {
+    font-size: calc(24px + 8 * (100vw - 320px) / 910);
   }
-  .benefit__col p {
+  .benefit-christian__col p {
     font-size: calc(16px + 4 * (100vw - 320px) / 910);
   }
 }
-.church__row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px -30px;
-}
-
-.church__col {
-  width: 33.33333%;
-  padding: 0 15px 30px;
-}
-
-.church__card {
+.church-card {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
   overflow: hidden;
   height: 100%;
 }
-
-.church__card-img {
+.church-card__img {
   height: 278px;
   overflow: hidden;
   width: 100%;
   border-radius: 5px;
 }
-.church__card-img img {
+.church-card__img img {
   display: block;
   width: 100%;
   height: 100%;
@@ -1115,29 +1123,27 @@ body {
      object-fit: cover;
 }
 
-.church__card-body {
+.church-card__body {
   padding: 15px;
   flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.church__card-body h4 {
+.church-card__body h4 {
   font-size: 20px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 15px;
 }
-.church__card-body p {
+.church-card__body p {
   text-align: center;
   flex: 1;
   margin-bottom: 20px;
 }
 
 @media (max-width: 1230px) {
-  .church__card-body h4 {
-    font-size: calc(16px + 4 * (100vw - 320px) / 910);
-  }
-  .church__card-body p {
+  .church-card__body h4, .church-card__body p {
     font-size: calc(16px + 4 * (100vw - 320px) / 910);
   }
 }
@@ -1151,17 +1157,6 @@ body {
     width: 100%;
   }
 }
-.our-team__row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px 30px;
-}
-
-.our-team__col {
-  padding: 0 15px 30px;
-  width: 25%;
-}
-
 .our-team__card {
   padding: 20px;
   overflow: hidden;
@@ -1193,11 +1188,12 @@ body {
   flex-direction: column;
 }
 .our-team__body h5 {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   margin-bottom: 15px;
 }
 .our-team__body p {
+  font-size: 1rem;
   flex: 1;
   text-align: center;
 }
@@ -1209,16 +1205,6 @@ body {
        column-gap: 20px;
 }
 
-@media (max-width: 991px) {
-  .our-team__col {
-    width: 50%;
-  }
-}
-@media (max-width: 767px) {
-  .our-team__col {
-    width: 100%;
-  }
-}
 .books {
   padding: 50px 0;
 }
