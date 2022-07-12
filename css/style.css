@@ -592,7 +592,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url("./../../img/sabbatSchool/load.svg");
+  background-image: url("./../img/sabbatSchool/load.svg");
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
@@ -610,7 +610,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url("./../../img/sabbatSchool/lesson-video.svg");
+  background-image: url("./../img/sabbatSchool/lesson-video.svg");
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
@@ -628,7 +628,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url("./../../img/sabbatSchool/lesson-audio.svg");
+  background-image: url("./../img/sabbatSchool/lesson-audio.svg");
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
@@ -911,7 +911,7 @@ body {
   height: 21px;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url(../../img/children/lessons-play.svg);
+  background-image: url(./../img/children/lessons-play.svg);
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
@@ -929,7 +929,7 @@ body {
   height: 21px;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url(../../img/children/lessons-read.svg);
+  background-image: url(./../img/children/lessons-read.svg);
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
