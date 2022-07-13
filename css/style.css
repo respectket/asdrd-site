@@ -43,7 +43,7 @@
   text-decoration: underline;
 }
 
-.titles-h2, .benefit-christian__col h2, .description-lessons__heading, .mission__heading, .video-content__heading, .sabbat-school-archive__heading, .video-invite__heading {
+.titles-h2, .contacts__text h2, .benefit-christian__col h2, .description-lessons__heading, .mission__heading, .video-content__heading, .sabbat-school-archive__heading, .video-invite__heading {
   font-size: 2rem;
   font-weight: 700;
   line-height: 120%;
@@ -217,6 +217,12 @@ body {
   top: 2px;
 }
 
+@media (max-width: 500px) {
+  .button {
+    padding: 10px 22px;
+    font-size: 0.875rem;
+  }
+}
 .burger-menu {
   display: none;
 }
@@ -478,20 +484,21 @@ body {
      object-fit: cover;
 }
 
-@media (max-width: 810px) {
-  .img__overlay {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-}
-@media (max-width: 495px) {
+@media (max-width: 1230px) {
   .home {
-    padding: 50px 0;
+    padding-top: calc(50px + 100 * (100vw - 320px) / 910);
+    padding-bottom: calc(50px + 100 * (100vw - 320px) / 910);
   }
   .home__heading {
-    font-size: 26px;
+    font-size: calc(24px + 16 * (100vw - 320px) / 910);
   }
   .home__text {
-    font-size: 16px;
+    font-size: calc(16px + 4 * (100vw - 320px) / 910);
+  }
+}
+@media (max-width: 720px) {
+  .home__img .img__overlay {
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
 .video-invite-general {
@@ -1208,18 +1215,6 @@ body {
 .books {
   padding: 50px 0;
 }
-
-.books__row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px -30px;
-}
-
-.books__col {
-  width: 25%;
-  padding: 0 15px 30px;
-}
-
 .books__card {
   overflow: hidden;
   height: 100%;
@@ -1227,11 +1222,12 @@ body {
   flex-direction: column;
   background-color: #F9FEFF;
 }
-
 .books__img {
   height: 400px;
+  width: 180px;
+  padding: 25px;
   overflow: hidden;
-  width: 100%;
+  width: auto;
 }
 .books__img img {
   display: block;
@@ -1240,7 +1236,6 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .books__body {
   padding: 15px;
   flex: 1;
@@ -1264,13 +1259,13 @@ body {
   justify-content: space-evenly;
 }
 
-@media (max-width: 991px) {
-  .books__col {
-    width: 50%;
-  }
+.contacts {
+  height: 120px;
+  background: linear-gradient(112.36deg, #066D92 15.58%, #26A7BD 71.5%);
 }
-@media (max-width: 767px) {
-  .books__col {
-    width: 100%;
-  }
+.contacts__text {
+  padding: 40px 0 40px 0;
+}
+.contacts__text h2 {
+  color: #fff;
 }
