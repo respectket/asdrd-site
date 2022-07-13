@@ -975,15 +975,6 @@ body {
   padding: 90px 0 25px 0;
   background-color: #fff;
 }
-.footer__row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px -30px;
-}
-.footer__col {
-  width: 25%;
-  padding: 0 15px 30px;
-}
 
 .footer-church__name {
   display: flex;
@@ -999,19 +990,23 @@ body {
 .footer-church__name p {
   margin-top: 15px;
   font-size: 1rem;
+  max-width: 300px;
 }
 
-.footer-menu {
+.footer-menu__row {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
-  height: 100%;
-  overflow: hidden;
 }
 
 .footer-menu__heading {
   margin-bottom: 15px;
+  color: #1E2746;
+}
+
+.footer-menu ul li + li {
+  margin-top: 10px;
 }
 
 .footer-menu ul li a {
@@ -1033,6 +1028,7 @@ body {
 
 .social-title {
   margin-bottom: 30px;
+  color: #1E2746;
 }
 
 .social-icon {
@@ -1064,17 +1060,15 @@ body {
 
 @media (max-width: 1230px) {
   .footer {
-    padding-top: calc(50px + 50 * (100vw - 320px) / 910);
+    padding-top: calc(50px + 40 * (100vw - 320px) / 940);
   }
 }
-@media (max-width: 888px) {
-  .footer__col {
-    width: 50%;
-  }
-}
-@media (max-width: 520px) {
+@media (max-width: 880px) {
   .footer__col {
     width: 100%;
+  }
+  .footer-menu__row {
+    justify-content: space-evenly;
   }
 }
 .benefit-christian {
