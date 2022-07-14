@@ -43,10 +43,16 @@
   text-decoration: underline;
 }
 
-.titles-h2, .contacts__text h2, .benefit-christian__col h2, .description-lessons__heading, .mission__heading, .video-content__heading, .sabbat-school-archive__heading, .video-invite__heading {
+.titles-h2, .faq__text, .contacts-heading__text, .benefit-christian__col h2, .description-lessons__heading, .mission__heading, .video-content__heading, .sabbat-school-archive__heading, .video-invite__heading {
   font-size: 2rem;
   font-weight: 700;
   line-height: 120%;
+  color: #191919;
+}
+
+.titles-h4, .faq__question, .contacts-data__heading, .question__heading {
+  font-size: 1.125rem;
+  font-weight: 600;
   color: #191919;
 }
 
@@ -56,6 +62,11 @@
 }
 
 .description-color, .our-team__body p, .church-card__body p, .benefit-christian__col p, .children-lessons__body p, .description-lessons__text, .mission__text, .sabbat-school-lesson__date, .sabbat-school-archive__text p, .video-invite__text p {
+  color: #4E4E4E;
+}
+
+.text-16, .faq__answer, .contacts-data__text, .question__text {
+  font-size: 1rem;
   color: #4E4E4E;
 }
 
@@ -139,7 +150,8 @@ button, input[type=submit] {
 }
 
 input:focus, input:active,
-button:focus, button:active {
+button:focus, button:active,
+textarea:focus, textarea:active {
   outline: none;
 }
 
@@ -1253,13 +1265,172 @@ body {
   justify-content: space-evenly;
 }
 
-.contacts {
+.contacts-heading {
   height: 120px;
   background: linear-gradient(112.36deg, #066D92 15.58%, #26A7BD 71.5%);
 }
-.contacts__text {
+.contacts-heading__wrapper {
   padding: 40px 0 40px 0;
 }
-.contacts__text h2 {
+.contacts-heading__text {
   color: #fff;
+}
+
+.contact-us {
+  padding: 50px 0;
+}
+.contact-us__row {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+.question__heading {
+  margin-bottom: 15px;
+}
+.question__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 30px 0 0 0;
+}
+
+.input-data {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #4E4E4E;
+}
+.input-data::-moz-placeholder {
+  font-size: 1rem;
+}
+.input-data:-ms-input-placeholder {
+  font-size: 1rem;
+}
+.input-data::placeholder {
+  font-size: 1rem;
+}
+
+.question-text {
+  resize: none;
+  border-bottom: 1px solid #4E4E4E;
+  max-width: 600px;
+}
+.question-text::-moz-placeholder {
+  font-size: 1rem;
+}
+.question-text:-ms-input-placeholder {
+  font-size: 1rem;
+}
+.question-text::placeholder {
+  font-size: 1rem;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contacts-data {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts-data__heading {
+  margin-bottom: 15px;
+}
+.contacts-data__text {
+  margin-bottom: 15px;
+}
+.contacts-data__phone {
+  position: relative;
+  left: 20px;
+  color: #0052B8;
+}
+.contacts-data__phone::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(./../img/contacts/icon/telephone.svg);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.contacts-data__address {
+  position: relative;
+  left: 27px;
+  color: #0052B8;
+}
+.contacts-data__address::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: -27px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(./../img/contacts/icon/map-target.svg);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 800px) {
+  .contact-us__row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .contacts-data {
+    row-gap: 30px;
+  }
+}
+.faq {
+  padding: 50px 0;
+  border-bottom: 1px solid #CACACA;
+}
+.faq__row {
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.faq__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+.faq__abb {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.faq__col {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  max-width: 700px;
+  overflow-y: hidden;
+}
+.faq__question {
+  margin-bottom: 10px;
+}
+@media (max-width: 800px) {
+  .faq__row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .faq__wrapper {
+    justify-content: flex-start;
+  }
 }
