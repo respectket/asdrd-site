@@ -45,4 +45,13 @@
         }
     }
 
+
+    /* ==============FAQ==================== */
   
+const questions = document.querySelectorAll("[data-name='faq-question']");
+
+questions.forEach(function(item){
+    item.addEventListener("click", function(){
+       this.nextElementSibling.classList.toggle("faq__answer--hidden");
+    })
+})
