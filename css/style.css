@@ -50,8 +50,8 @@
   color: #191919;
 }
 
-.titles-h4, .faq__question, .contacts-data__heading, .question__heading {
-  font-size: 1.125rem;
+.titles-h4, .faq__question, .contacts-data__heading, .question__heading, .church-card__body h4 {
+  font-size: 1.5rem;
   font-weight: 600;
   color: #191919;
 }
@@ -1144,8 +1144,6 @@ body {
   align-items: center;
 }
 .church-card__body h4 {
-  font-size: 20px;
-  font-weight: 600;
   text-align: center;
   margin-bottom: 15px;
 }
